@@ -9,7 +9,7 @@ var routes = require('./routes/index');
 var users = require('./routes/users');
 
 var mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost:27017/sample__DB');
+mongoose.connect(process.env.MONGOLAB_URI || 'mongodb://localhost:27017/sample__DB');
 var db = mongoose.connection;
 
 var opp = require('./controllers/OppCntrl');
