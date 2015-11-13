@@ -6,4 +6,5 @@ var OppSchema = new Schema({
   Name: String
 },{ collection : 'Opportunities' });
 
+
 module.exports = mongoose.model('Opportunities', OppSchema);
